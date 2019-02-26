@@ -14,9 +14,9 @@ public:
                 char match;
                 if (s[i] == ')') {
                     match = '(';
-				} else if (s[i] == ']') {
+                } else if (s[i] == ']') {
                     match = '[';
-				} else {
+                } else {
                     assert(s[i] == '}');
                     match = '{';
                 }
