@@ -12,12 +12,12 @@ public:
                 stack.pop();
                 
                 char match;
-                if( s[i] == ')' )
+                if (s[i] == ')') {
                     match = '(';
-                else if( s[i] == ']' )
+				} else if (s[i] == ']') {
                     match = '[';
-                else{
-                    assert( s[i] == '}' );
+				} else {
+                    assert(s[i] == '}');
                     match = '{';
                 }
                 
@@ -26,7 +26,7 @@ public:
             }
         }
         
-        if( stack.size() != 0 )
+        if(stack.size() != 0)
             return false;
         
         return true;
