@@ -1,4 +1,4 @@
-class Solution {
+ifclass Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
         sort(nums.begin(), nums.end());
